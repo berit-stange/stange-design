@@ -1,0 +1,68 @@
+@charset "utf-8";
+/* CSS Document */
+
+.produkt-01{
+        background-image:url(/img/pappbett-stange-design-neu-1.jpg);
+        background-position: center;
+        background-size: cover;
+    }     
+.produkt-01-01{
+        background-image:url(/img/pappbett-stange-design-neu-1.jpg);
+        background-position: center;
+        background-size: cover;
+    } 
+
+.produkt-02{
+        background-image:url(/img/stange-design-produkte-pappmoebel-kommode_0111.jpg);
+    	background-position: center;
+        background-size: cover;
+    } 
+
+.produkt-02-01{
+        background-image:url(/img/pappmoebel-hocker-maks-natur-01.jpg);
+        background-position: center;
+        background-size: cover;
+    } 
+
+.produkt-03{
+        background-image:url(/img/stange-design-produkte-pappmoebel-kommode_0059.jpg);
+        background-position: center;
+        background-size: cover;
+    } 
+ 
+.produkt-04{
+        background-image: url(/img/pappmoebel-stange-design-regale_0161.jpg);
+        background-position: center;
+        background-size: cover;
+    } 
+
+
+.produkt-05{
+        background-image:url(/img/pappmoebel-stange-design-tisch-regale-office_0190-quer.jpg);
+        background-position: center;
+        background-size: cover;
+    } 
+
+.produkt-06{
+        background-image:url(/img/pappmoebel-stange-design-hocker_0064.jpg);
+        background-position: center;
+        background-size: cover;
+    } 
+
+.produkt-07{
+        background-image:url(/img/pappmoebel-stange-design-schaf_0114.jpg);
+        background-position: center;
+        background-size: cover;
+    } 
+
+.produkt-08{
+        background-image:url(/img/pappmoebel-stange-design-regal_0308.jpg);
+        background-position: center;
+        background-size: cover;
+    } 
+
+.produkt-09{
+        background-image:url(/img/pappmoebel-stange-design-sessel-regal_0268v2.jpg);
+        background-position: center;
+        background-size: cover;
+    } 

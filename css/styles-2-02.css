@@ -1,0 +1,309 @@
+@charset "utf-8";
+/* ------------------------ inhalte ------------------------ */
+.brand{
+    height: 120px;
+    border-bottom: 2px #D6D6D6 dotted;
+}
+.logo{
+	display: block;
+	float: left;
+	width: 350px;
+	position: relative;
+	top: 30px;
+	left: 40px;
+}
+.logo-klein{
+	display: inline-block;
+	width: 70%;
+}
+.kreis{
+	display: block;
+	float: left;
+	width: 100px;
+    position: absolute;
+    top: 80px;
+	left: 50px;
+	transform: rotate(-30deg);
+	z-index: 8000;
+}
+div[id*="bild-"]{
+        height: 300px;
+    }
+div[class*="bildContainer"]{
+        padding:15px;
+/*        height: 400px;*/
+        overflow: hidden;
+    }
+div[class*="bildContainerHoch"]{
+		height: 450px;
+		padding: 15px;
+        overflow: hidden;
+    }   
+ div[class*="bildContainer"]:first-child{
+        padding-left: 0px;
+        padding-right: 30px;
+    }
+ div[class*="bildContainer"]:nth-child(2){
+/*        padding-left: 0px;*/
+    }
+ div[class*="bildContainer"]:last-child{
+        padding-right: 0px;
+        padding-left: 30px;
+    }
+
+/*------------------------ bild-texte ------------------------*/
+
+.bildH430{
+    height: 430px;
+    overflow: hidden;
+}
+.bildFrei{
+    height: 300px;
+    background-color: transparent;
+    color: transparent;
+    border: 20px solid transparent;
+    border-top: 200px solid transparent;
+    transition: 1s all ease;
+    overflow: hidden;
+/*    padding: 0px 0px 0px 0px;*/
+}
+.bildFrei:hover{
+	color: #222222;
+    background-color: rgba(255,255,255,0.8);
+    border-top: 10px solid transparent;
+/*    border: 2px rgba(20, 176, 66, 0.5) dotted;*/
+/*    border-top: 20px solid transparent;*/
+/*    transition: 0.5s all ease;*/
+}
+.bildFrei h3{
+    font-size: 16px;
+    font-weight: 600;
+    background-color: rgba(255, 255, 255, 0.85);
+    color: #222222;
+    padding: 20px;
+    position: relative;
+    top: 0;
+}
+
+.bildFrei p{
+    font-size: 14px;
+    font-weight: 600;
+	line-height: 20px;
+    padding-top: 20px;
+}
+
+.bildFreiHoch{
+    height: 450px;
+    background-color: transparent;
+    color: transparent;
+    transition: 0.5s all ease;
+/*    padding: 30px;*/
+    overflow: hidden;
+}
+/*.bildFreiHoch:hover{
+    height: 450px;
+    color: #14B042;
+    background-color:rgba(255,255,255,0.80);
+	text-align: center;
+    transition: 0.5s all ease;
+}*/
+.bildUeb{
+    height: 300px;
+    overflow: hidden;
+}
+.imageA{
+    height: 100%;
+/*    min-width: 100%;*/
+/*    width: 100%;*/
+/*    text-align: center;*/
+    overflow: hidden;
+}
+.B50{
+    width: 80%;
+    padding: 10px;
+/*    margin: 0 auto;*/
+}
+.bu{
+    width: 90%;
+    padding: 10px;
+/*    margin: 0 auto;*/
+}
+
+/*------------------------ lightbox ------------------------*/
+
+.lightbox {
+	/** Default lightbox to hidden */
+	display: none;
+	/** Position and style */
+	position: fixed;
+	z-index: 999;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	top: 0;
+	left: 0;
+	background: rgba(13, 14, 20, 0.8);
+}
+.lightbox img {
+	/** Pad the lightbox image */
+	max-width: 90%;
+	max-height: 80%;
+	margin-top: 2%;
+}
+.lightbox:target {
+	/** Remove default browser outline */
+	outline: none;
+
+	/** Unhide lightbox **/
+	display: block;
+}
+.thumbnail {
+  max-width: 40%;
+}
+.text-lightbox{
+    color: white;
+    margin: 0 auto;
+}
+/*------------------------farb-details------------------------*/
+.gruen{
+	background-color: #14b042;
+}
+.weiss{
+	background-color: #fff;
+}
+.border{
+/*	border-bottom: 1px #D6D6D6 dashed;*/
+    border-bottom: 2px #D6D6D6 dotted;
+}
+/*------------------------ paddings ------------------------*/
+.pad-0{
+	padding: 0px;
+}
+.pad-5{
+	padding: 5px;
+}
+.pad-10rl{
+	padding: 0px 10px 0px 10px;
+}
+.pad-15ou{
+	padding: 15px 0px 15px 0px;
+}
+.pad-20{
+	padding: 20px;
+}
+.pad-20ou{
+	padding: 20px 0px 20px 0px;
+}
+.pad-o{
+	padding-top: 20px;
+}
+.pad-l{
+	padding-left: 20px;
+}
+.pad-30{
+	padding: 30px;
+}
+.pad-30ou{
+	padding: 30px 0px 30px 0px;
+}
+.pad-30rl{
+	padding: 0px 30px 0px 30px;
+}
+.pad-40{
+	/*padding: 0px 40px 0px 40px;*/
+	padding-right: 40px;
+	padding-left: 40px;
+}
+.pad-40ou{
+	padding: 40px 0px 40px 0px;
+}
+.pad-50{
+	padding: 50px;
+}
+.pad-50ou{
+	padding: 50px 0px 50px 0px;
+}
+.pad-50u{
+	padding: 0px 0px 50px 0px;
+}
+.hidden{
+	visibility: hidden;
+	display: none;
+}
+/*------------------------ text-details ------------------------*/
+.te-re{
+	text-align: right;
+}
+.te-li{
+	text-align: left;
+}
+.center-text{
+	text-align: center;
+}
+.te-mini{
+	font-size: 12px;
+}
+.te-s{
+	color: black;
+}
+.te-g{
+	color: #222222;
+}
+.te-w{
+	color: white;
+    font-weight: 100;
+}
+.te-w:hover{
+	color: #222222;
+}
+.bo-bot{
+    border-bottom: 1px solid white;
+    width: 100%;
+}
+.zumShop{
+    height: 40px;
+    width: auto;
+    padding: 10px 10px 10px 10px;
+    margin-top: 10px;
+    margin-right: 0px;
+    display: block;
+    float: right;
+    cursor: pointer;
+/*	color: #222222;*/
+    color: white;
+/*    background-color: #f0f0f0;*/
+    background-color: #14B042;
+    position: relative;
+	top: 0;
+}
+.zumShop:hover{
+	color: #222222;
+/*    background-color: #D6D6D6;*/
+    background-color: #eeeeee;
+}
+.faq{
+    color: #14B042;
+    font-style: italic;
+}
+.pfeil-r {
+  width: 0px; 
+  height: 0px; 
+  border-top: 30px solid transparent;
+  border-bottom: 30px solid transparent;
+  
+  border-left: 30px solid #222222;
+  position: relative;
+  top: 25px;
+  left: 20px;
+}
+.pfeil-u {
+  width: 0px; 
+  height: 0px; 
+  border-right: 30px solid transparent;
+  border-left: 30px solid transparent;
+  
+  border-top: 30px solid #222222;
+  margin: 0 auto;
+  margin-top: 5px;
+}
+
