@@ -450,27 +450,27 @@
 
        /*------------Bilder-------------------------------------------------*/
        .bildFrei {
-           height: 140px;
+           height: 400px;
            width: 100%;
            border: 0px solid transparent;
            border-top: 0px solid transparent;
            transition: 1s all ease;
            overflow: visible;
            background-color: transparent;
-           margin-bottom: 200px;
+           margin-bottom: 0px;
            padding: 0px 0px 0px 0px;
            display: flex;
            align-items: center;
        }
 
        .bildFrei:hover {
-           height: 140px;
+           height: 400px;
            width: 100%;
            border: 0px solid transparent;
            transition: 1s all ease;
            overflow: visible;
            background-color: transparent;
-           margin-bottom: 200px;
+           margin-bottom: 0px;
            padding: 0px 0px 0px 0px;
            display: flex;
            align-items: center;
@@ -481,7 +481,7 @@
            line-height: 18px;
            background-color: transparent;
            color: #eeeeee;
-           padding: 0px 0px 0px 0px;
+           padding: 10px 0px 0px 0px;
            width: 100%;
        }
 
@@ -490,19 +490,22 @@
            line-height: 20px;
            font-weight: 500;
            width: 100%;
-           padding: 0% 20% 0% 5%;
+           /* padding: 20px; */
            color: #eeeeee;
-           height: 150px;
+           /* height: 110px; */
+           text-align: center;
+           padding: 10px 0px 20px 0px;
        }
 
        .bildFrei-unten {
            background-color: #222222cc;
            width: 100%;
            position: relative;
-           top: 159px;
+           top: 150px;
            color: #eeeeee;
            padding: 10px 0px 0px 0px;
            align-self: center;
+           height: 100px;
        }
 
        .bildFreiHoch2 {
