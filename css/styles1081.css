@@ -512,14 +512,14 @@
         border-top: none;
         transition: 1s all ease;
         overflow: hidden;
-        padding: 50px 20px 0px 20px;
+        padding: 0px 20px 0px 20px;
         display: flex;
         align-items: center;
         justify-content: center;
     }
 
     .bildFrei h3 {
-        font-size: 12px;
+        font-size: 14px;
         background-color: transparent;
         color: #eeeeee;
         padding: 0px;
