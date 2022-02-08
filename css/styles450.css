@@ -450,47 +450,38 @@
 
        /*------------Bilder-------------------------------------------------*/
        .bildFrei {
-           height: 150px;
+           height: 140px;
            width: 100%;
-           /* border: 0px solid transparent; */
-           /* border-top: 0px solid transparent; */
            border: 0px solid transparent;
-           /* border-top: 150px solid transparent; */
-           /* border-top: 150px solid #222222cc; */
+           border-top: 0px solid transparent;
            transition: 1s all ease;
            overflow: visible;
            background-color: transparent;
-           /* background-color: #222222cc; */
            margin-bottom: 200px;
            padding: 0px 0px 0px 0px;
+           display: flex;
+           align-items: center;
        }
 
        .bildFrei:hover {
-           height: 150px;
+           height: 140px;
            width: 100%;
-           /* border: 0px solid transparent; */
-           /* border-top: 0px solid transparent; */
            border: 0px solid transparent;
-           /* border-top: 10px solid transparent; */
-           /* border-top: 150px solid #222222cc; */
            transition: 1s all ease;
            overflow: visible;
            background-color: transparent;
-           /* background-color: #222222cc; */
            margin-bottom: 200px;
            padding: 0px 0px 0px 0px;
+           display: flex;
+           align-items: center;
        }
 
        .bildFrei h3 {
            font-size: 17px;
            line-height: 18px;
            background-color: transparent;
-           /* background-color: #eeeeee; */
            color: #eeeeee;
-           /* position: relative;
-           top: 150px; */
            padding: 0px 0px 0px 0px;
-           padding-top: 0px;
            width: 100%;
        }
 
@@ -499,25 +490,23 @@
            line-height: 20px;
            font-weight: 500;
            width: 100%;
-           padding: 5% 20% 0% 5%;
-           height: 155px;
-           /* position: relative; */
-           /* top: 150px; */
-           /* background-color: #eeeeee; */
+           padding: 0% 20% 0% 5%;
            color: #eeeeee;
+           height: 150px;
        }
 
        .bildFrei-unten {
            background-color: #222222cc;
            width: 100%;
            position: relative;
-           top: 150px;
+           top: 159px;
            color: #eeeeee;
+           padding: 10px 0px 0px 0px;
+           align-self: center;
        }
 
        .bildFreiHoch2 {
            height: auto;
-           /*    padding: 30px;*/
            overflow: hidden;
        }
 
