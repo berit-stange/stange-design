@@ -452,11 +452,15 @@
        .bildFrei {
            height: 150px;
            width: 100%;
+           /* border: 0px solid transparent; */
+           /* border-top: 0px solid transparent; */
            border: 0px solid transparent;
-           border-top: 0px solid transparent;
+           /* border-top: 150px solid transparent; */
+           /* border-top: 150px solid #222222cc; */
            transition: 1s all ease;
            overflow: visible;
            background-color: transparent;
+           /* background-color: #222222cc; */
            margin-bottom: 200px;
            padding: 0px 0px 0px 0px;
        }
@@ -464,11 +468,15 @@
        .bildFrei:hover {
            height: 150px;
            width: 100%;
+           /* border: 0px solid transparent; */
+           /* border-top: 0px solid transparent; */
            border: 0px solid transparent;
-           border-top: 0px solid transparent;
+           /* border-top: 10px solid transparent; */
+           /* border-top: 150px solid #222222cc; */
            transition: 1s all ease;
            overflow: visible;
            background-color: transparent;
+           /* background-color: #222222cc; */
            margin-bottom: 200px;
            padding: 0px 0px 0px 0px;
        }
@@ -477,12 +485,12 @@
            font-size: 17px;
            line-height: 18px;
            background-color: transparent;
-           background-color: #eeeeee;
-           color: #222222;
-           position: relative;
-           top: 150px;
+           /* background-color: #eeeeee; */
+           color: #eeeeee;
+           /* position: relative;
+           top: 150px; */
            padding: 0px 0px 0px 0px;
-           padding-top: 20px;
+           padding-top: 0px;
            width: 100%;
        }
 
@@ -492,10 +500,19 @@
            font-weight: 500;
            width: 100%;
            padding: 5% 20% 0% 5%;
-           height: 150px;
+           height: 155px;
+           /* position: relative; */
+           /* top: 150px; */
+           /* background-color: #eeeeee; */
+           color: #eeeeee;
+       }
+
+       .bildFrei-unten {
+           background-color: #222222cc;
+           width: 100%;
            position: relative;
            top: 150px;
-           background-color: #eeeeee;
+           color: #eeeeee;
        }
 
        .bildFreiHoch2 {

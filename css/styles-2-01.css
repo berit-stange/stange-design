@@ -121,7 +121,7 @@ header label {
 
 h1 {
     color: #222222;
-    font-size: 36px;
+    font-size: 30px;
     font-weight: 600;
     font-style: italic;
     text-align: center;
@@ -132,7 +132,7 @@ h1 {
 
 h2 {
     color: #222222;
-    font-size: 22px;
+    font-size: 20px;
     font-weight: 500;
     line-height: 35px;
     letter-spacing: 0.2px;

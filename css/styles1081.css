@@ -525,26 +525,23 @@
         letter-spacing: 1.05px;
     }
 
-    .bildFreiRe {
-        position: relative;
-        top: 0;
-        right: -50%;
-        z-index: 1000;
-    }
-
     .bildFrei p {
         color: #eeeeee;
         font-size: 12px;
         font-weight: 500;
-        /* padding-top: 10px; */
-        /* padding-left: 0px; */
-        /* padding-right: 50px; */
         padding: 20px 0px 0px 0px;
         height: 150px;
     }
 
     .bildFreiHoch2 {
         height: auto;
+    }
+
+    .bildFreiRe {
+        position: relative;
+        top: 0;
+        right: -50%;
+        z-index: 1000;
     }
 
     .imageA {
@@ -596,7 +593,7 @@
 
     h1 {
         color: #222222;
-        font-size: 36px;
+        font-size: 26px;
         font-weight: 600;
         font-style: italic;
         text-align: center;
@@ -604,7 +601,7 @@
     }
 
     h2 {
-        font-size: 20px;
+        font-size: 18px;
     }
 
     p {
