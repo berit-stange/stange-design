@@ -46,17 +46,17 @@ header label {
     height: 170px;
 }
 
-main {
-    /*    position: relative; */
-    /*    top: 220px;*/
-    /*    left: 0;*/
-    /*    right: 0;*/
-    /*    width: 90%; */
-    /*    height: auto;*/
-    /*    max-width: 1200px;*/
-    /*    background-color: white;*/
-    /*    z-index: 500;*/
-}
+/* main { */
+/*    position: relative; */
+/*    top: 220px;*/
+/*    left: 0;*/
+/*    right: 0;*/
+/*    width: 90%; */
+/*    height: auto;*/
+/*    max-width: 1200px;*/
+/*    background-color: white;*/
+/*    z-index: 500;*/
+/* } */
 
 .main {
     padding-bottom: 500px;
@@ -126,7 +126,7 @@ h1 {
     font-style: italic;
     text-align: center;
     text-transform: uppercase;
-    width: 66.66666666%;
+    max-width: 80%;
     margin: 0 auto;
 }
 
@@ -138,7 +138,7 @@ h2 {
     letter-spacing: 0.2px;
     text-align: center;
     /*	text-transform: uppercase;*/
-    /*    width: 66.66666666%; */
+    max-width: 80%;
     margin: 0 auto;
 }
 
@@ -253,6 +253,12 @@ a:active {
     color: #14b042;
     font-weight: 600;
     padding: 10px 10px 10px 10px;
+}
+
+.link-gruen {
+    color: #14b042;
+    /* font-weight: 600; */
+    padding: 10px 10px 10px 0px;
 }
 
 img {
@@ -373,7 +379,6 @@ img {
 
 .grid-3 {
     display: grid;
-    /*  grid-template-rows: repeat(3, 1fr);*/
     grid-template-columns: repeat(3, 1fr);
 }
 
@@ -411,10 +416,10 @@ img {
     text-align: center;
 }
 
-.nav-thema:hover {
-    /*    background-color: white;*/
-    /*color: white;*/
-}
+/* .nav-thema:hover { */
+/*    background-color: white;*/
+/*color: white;*/
+/* } */
 
 .nav-spezial {
     color: white;
@@ -458,10 +463,10 @@ img {
     margin: 1px 1px 1px 1px;
 }
 
-.nav2:hover {
-    /*    background-color: #ffffff;*/
-    /*    color: #14b042;*/
-}
+/* .nav2:hover { */
+/*    background-color: #ffffff;*/
+/*    color: #14b042;*/
+/* } */
 
 .nav2:last-child {
     border-right: none;
@@ -508,10 +513,10 @@ img {
     margin: 0;
 }
 
-.nav-act:hover {
-    /*    color: #14b042;*/
-    /*    background-color: #f0f0f0;*/
-}
+/* .nav-act:hover { */
+/*    color: #14b042;*/
+/*    background-color: #f0f0f0;*/
+/* } */
 
 /* ------------------------------------------------FOOTER-------------------------------- */
 footer {
