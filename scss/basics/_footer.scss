@@ -1,0 +1,98 @@
+/* ------------------------------------------------FOOTER-------------------------------- */
+footer {
+    height: auto;
+    position: relative;
+    bottom: 0px;
+    margin: 0 auto;
+    width: 90%;
+    max-width: 1200px;
+    background-color: #14b042;
+    padding-bottom: 50px;
+}
+
+.foo-log {
+    display: block;
+    position: relative;
+    top: 20px;
+    left: 20px;
+}
+
+.nav-footer {
+    margin-bottom: 10px;
+    font-size: 15px;
+    font-weight: 400;
+    padding: 10px 5px 0px 0px;
+    display: block;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.nav2-footer {
+    width: auto;
+    font-size: 13px;
+    font-weight: 300;
+    font-style: italic;
+    display: block;
+    cursor: pointer;
+    text-decoration: none;
+    margin: 10px;
+}
+
+.nav2-footer:hover {
+    color: #222222;
+}
+
+.text-weiss {
+    color: white;
+    /*	font-size: 12px;*/
+}
+
+.breite {
+    width: 90%;
+    max-width: 1200px;
+}
+
+.p-center {
+    text-align: center;
+    /*    width: 60%;*/
+}
+
+.a-foot-spez {
+    color: white;
+    font-weight: 600;
+    padding: 10px 10px 10px 10px;
+    display: inline-block;
+}
+
+.a-foot-spez:hover {
+    color: #222222;
+}
+
+.a-foot-u {
+    color: white;
+    /*    color: #222222;*/
+    font-weight: 500;
+    padding: 10px 10px 10px 10px;
+    display: inline-block;
+    float: none;
+}
+
+.p-foot {
+    display: block;
+    font-size: 15px;
+    font-weight: 400;
+    /*    font-style: italic;*/
+    line-height: 20px;
+    color: white;
+}
+
+.foot-cent {
+    width: 100%;
+    font-size: 12px;
+    text-align: center;
+    margin: 0 auto;
+    position: absolute;
+    bottom: 0px;
+    border-top: 2px dotted white;
+    padding: 10px;
+}
