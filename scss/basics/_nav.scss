@@ -1,0 +1,130 @@
+/* ------------------------------------------------------------------- NAV ----- */
+.nav-container {
+    padding: 5px 10px 5px 10px;
+    width: 100%;
+    height: auto;
+    float: right;
+    position: relative;
+    top: 0px;
+    right: 0px;
+    border-bottom: 1px rgba(20, 176, 66, 0.5) dotted;
+    margin: 0px 0px 0px 20px;
+}
+
+.no-b {
+    border-bottom: 0px;
+}
+
+.nav-thema {
+    /*    height: 40px;*/
+    height: auto;
+    width: 15%;
+    width: auto;
+    font-size: 16px;
+    font-weight: 400;
+    color: #222222;
+    padding: 10px 0px 10px 0px;
+    display: block;
+    float: right;
+    cursor: pointer;
+    top: 0;
+    right: 0;
+    text-align: center;
+}
+
+/* .nav-thema:hover { */
+/*    background-color: white;*/
+/*color: white;*/
+/* } */
+
+.nav-spezial {
+    color: white;
+    background-color: #14b042;
+    margin-right: 0px;
+    visibility: hidden;
+}
+
+.nav-spezial:hover {
+    color: white;
+    background-color: #000000;
+}
+
+.hamburgerContainer {
+    /*    visibility: hidden;*/
+    position: relative;
+    top: 0px;
+    height: auto;
+}
+
+.hamburgerBox {
+    /*    visibility: hidden;*/
+    position: absolute;
+    top: 0;
+    background-color: white;
+    width: 100%;
+    height: auto;
+}
+
+.hamburgerHeader {
+    visibility: hidden;
+}
+
+/* ------------------------------------------------NAV 2-------------------------------- */
+.nav2 {
+    list-style: none;
+    float: none;
+    text-decoration: none;
+    text-align: center;
+    border-right: 1px solid rgba(20, 176, 66, 0.5);
+    margin: 1px 1px 1px 1px;
+}
+
+/* .nav2:hover { */
+/*    background-color: #ffffff;*/
+/*    color: #14b042;*/
+/* } */
+
+.nav2:last-child {
+    border-right: none;
+}
+
+.nav2-pos {
+    display: inline-flex;
+    float: none;
+    position: absolute;
+    right: 10px;
+    top: 60px;
+    width: auto;
+    height: 30px;
+}
+
+.nav2text {
+    display: block;
+    color: #222222;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 5px 10px 10px 10px;
+    width: auto;
+}
+
+.nav2text:hover {
+    color: #14b042;
+}
+
+.nav2active {
+    /*    background-color: white;*/
+    color: #14b042;
+}
+
+.nav2hid {
+    visibility: hidden;
+}
+
+.nav2vis {
+    visibility: visible;
+}
+
+.nav-act {
+    background-color: white;
+    margin: 0;
+}
