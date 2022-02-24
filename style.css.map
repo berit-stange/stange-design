@@ -1,0 +1,18 @@
+{
+    "version": 3,
+    "mappings": "ACAA,OAAO,CAAC,2GAAI",
+    "sources": [
+        "style.scss",
+        "scss/basics/_fonts.scss",
+        "scss/basics/_colors.scss",
+        "scss/basics/_footer.scss",
+        "scss/basics/_nav.scss",
+        "scss/pages/_about.scss",
+        "scss/pages/_entwicklung.scss",
+        "scss/pages/_produkte.scss",
+        "scss/pages/_projekte.scss",
+        "scss/pages/_slider.scss"
+    ],
+    "names": [],
+    "file": "style.css"
+}
