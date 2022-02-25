@@ -78,6 +78,11 @@ header label {
     left: 0;
 }
 
+.breite {
+    width: 90%;
+    max-width: 1200px;
+}
+
 .m170 {
     position: relative;
     top: 170px;
@@ -449,19 +454,16 @@ div[class*="bildContainerHoch"] {
     overflow: hidden;
 }
 
-div[class*="bildContainer"]:first-child {
-    padding-left: 0px;
-    padding-right: 30px;
-}
+// div[class*="bildContainer"]:first-child {
+//     padding-left: 0px;
+//     padding-right: 30px;
+// }
 
-/* div[class*="bildContainer"]:nth-child(2) { */
-/*        padding-left: 0px;*/
-/* } */
 
-div[class*="bildContainer"]:last-child {
-    padding-right: 0px;
-    padding-left: 30px;
-}
+// div[class*="bildContainer"]:last-child {
+//     padding-right: 0px;
+//     padding-left: 30px;
+// }
 
 /*------------------------ bild-texte ------------------------*/
 
@@ -557,6 +559,7 @@ div[class*="bildContainer"]:last-child {
 	text-align: center;
     transition: 0.5s all ease;
 }*/
+
 .bildUeb {
     height: 300px;
     overflow: hidden;
