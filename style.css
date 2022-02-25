@@ -53,11 +53,6 @@ footer {
   /*	font-size: 12px;*/
 }
 
-.breite {
-  width: 90%;
-  max-width: 1200px;
-}
-
 .p-center {
   text-align: center;
   /*    width: 60%;*/
@@ -2430,7 +2425,7 @@ input#radio-05:checked ~ .slider-dots label#img-dot-5 {
 body {
   width: 100%;
   height: 100%;
-  font-family: "Roboto Slab", sans-serif;
+  font-family: "Raleway", sans-serif;
   background-color: #eeeeee;
 }
 
@@ -2454,7 +2449,7 @@ header label {
   display: inline-block;
   text-align: center;
   color: #ffffff;
-  font-family: "Roboto Slab", sans-serif;
+  font-family: "Raleway", sans-serif;
   line-height: 30px;
   cursor: pointer;
   margin: 10px 10px;
@@ -2483,6 +2478,11 @@ header label {
   left: 0;
 }
 
+.breite {
+  width: 90%;
+  max-width: 1200px;
+}
+
 .m170 {
   position: relative;
   top: 170px;
@@ -2493,7 +2493,7 @@ header label {
 .h2-slider {
   padding-bottom: 20px;
   font-size: 40px;
-  font-family: "Roboto Slab", sans-serif;
+  font-family: "Raleway", sans-serif;
   font-weight: 600;
   font-style: italic;
   text-transform: uppercase;
@@ -2848,19 +2848,6 @@ div[class*="bildContainerHoch"] {
   height: 450px;
   padding: 15px;
   overflow: hidden;
-}
-
-div[class*="bildContainer"]:first-child {
-  padding-left: 0px;
-  padding-right: 30px;
-}
-
-/* div[class*="bildContainer"]:nth-child(2) { */
-/*        padding-left: 0px;*/
-/* } */
-div[class*="bildContainer"]:last-child {
-  padding-right: 0px;
-  padding-left: 30px;
 }
 
 /*------------------------ bild-texte ------------------------*/
