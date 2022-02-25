@@ -5,7 +5,7 @@
 
 @import './scss/basics/breakpoint450';
 @import './scss/basics/breakpoint660';
-@import './scss/basics/breakpoint1081';
+// @import './scss/basics/breakpoint1081';
 @import './scss/basics/breakpoints';
 
 @import './scss/pages/about';
@@ -388,10 +388,9 @@ img {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
 
-    // grid-template-columns: 1fr 1fr 1fr;
     @include lg {
-    grid-template-columns: repeat(2, 1fr);
-}
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 /*---------------------------------GRID 1081---------------------------------*/
@@ -474,12 +473,30 @@ div[class*="bildContainer"]:last-child {
 .bildFrei {
     height: 300px;
     background-color: transparent;
-    color: transparent;
+    // color: transparent;
     border: 20px solid transparent;
     border-top: 200px solid transparent;
     transition: 1s all ease;
     overflow: hidden;
     /*    padding: 0px 0px 0px 0px;*/
+
+    @include sm {}
+
+    @include md {}
+
+    @include lg {
+        height: 300px;
+        width: 50%;
+        background-color: #222222cc;
+        border: 0px solid transparent;
+        border-top: none;
+        transition: 1s all ease;
+        overflow: hidden;
+        padding: 0px 20px 0px 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 }
 
 .bildFrei:hover {
@@ -491,6 +508,19 @@ div[class*="bildContainer"]:last-child {
     /*    border: 2px rgba(20, 176, 66, 0.5) dotted;*/
     /*    border-top: 20px solid transparent;*/
     /*    transition: 0.5s all ease;*/
+
+    @include lg {
+        // height: 300px;
+        // width: 50%;
+        // background-color: #222222cc;
+        // border: 0px solid transparent;
+        border-top: none;
+        // transition: 1s all ease;
+        // overflow: hidden;
+        // padding: 0px 20px 0px 20px;
+        // display: flex;
+        // align-items: center;
+    }
 }
 
 .bildFrei h3 {
