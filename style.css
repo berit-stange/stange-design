@@ -2794,6 +2794,13 @@ img {
       grid-template-columns: repeat(3, 1fr);
 }
 
+@media (max-width: 1200px) {
+  .grid-3 {
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+  }
+}
+
 @media (max-width: 1080px) {
   .grid-3 {
     -ms-grid-columns: (1fr)[2];
@@ -2801,7 +2808,13 @@ img {
   }
 }
 
-/*---------------------------------GRID 1081---------------------------------*/
+@media (max-width: 760px) {
+  .grid-3 {
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+  }
+}
+
 /* -------------------------------------------------------INHALTE------------------ */
 .brand {
   height: 120px;
@@ -2891,9 +2904,6 @@ div[class*="bildContainerHoch"] {
 }
 
 .bildFrei:hover {
-  /* color: $dark-color; */
-  /* color: $base-color; */
-  /* background-color: rgba(255,255,255,0.8); */
   background-color: #222222cc;
   border-top: 30px solid transparent;
   /*    border: 2px rgba(20, 176, 66, 0.5) dotted;*/
@@ -3065,9 +3075,19 @@ div[class*="bildContainerHoch"] {
 }
 
 .pad-40 {
-  /*padding: 0px 40px 0px 40px;*/
-  padding-right: 40px;
-  padding-left: 40px;
+  padding: 0px 40px 0px 40px;
+}
+
+@media (max-width: 1080px) {
+  .pad-40 {
+    padding: 0px 10px 0px 10px;
+  }
+}
+
+@media (max-width: 760px) {
+  .pad-40 {
+    padding: 0px 40px 0px 40px;
+  }
 }
 
 .pad-40ou {

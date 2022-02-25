@@ -393,17 +393,18 @@ img {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
 
+    @include xl {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
     @include lg {
         grid-template-columns: repeat(2, 1fr);
     }
-}
 
-/*---------------------------------GRID 1081---------------------------------*/
-//    .grid-3 {
-// grid-template-columns: repeat(2, 1fr);
-// grid-template-columns: 1fr 1fr;
-// grid-gap: 20px;
-// } 
+    @include md {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
 
 
 
@@ -475,7 +476,6 @@ div[class*="bildContainerHoch"] {
 .bildFrei {
     height: 300px;
     background-color: transparent;
-    // color: transparent;
     border: 20px solid transparent;
     border-top: 200px solid transparent;
     transition: 1s all ease;
@@ -502,9 +502,6 @@ div[class*="bildContainerHoch"] {
 }
 
 .bildFrei:hover {
-    /* color: $dark-color; */
-    /* color: $base-color; */
-    /* background-color: rgba(255,255,255,0.8); */
     background-color: $dark-color-op;
     border-top: 30px solid transparent;
     /*    border: 2px rgba(20, 176, 66, 0.5) dotted;*/
@@ -685,9 +682,15 @@ div[class*="bildContainerHoch"] {
 }
 
 .pad-40 {
-    /*padding: 0px 40px 0px 40px;*/
-    padding-right: 40px;
-    padding-left: 40px;
+    padding: 0px 40px 0px 40px;
+
+    @include lg {
+        padding: 0px 10px 0px 10px;
+    }
+
+    @include md {
+        padding: 0px 40px 0px 40px;
+    }
 }
 
 .pad-40ou {
