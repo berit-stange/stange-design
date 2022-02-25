@@ -2801,7 +2801,7 @@ img {
   }
 }
 
-@media (max-width: 960px) {
+@media (max-width: 1080px) {
   .grid-3 {
     -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
@@ -2880,7 +2880,7 @@ div[class*="bildContainerHoch"] {
   /*    padding: 0px 0px 0px 0px;*/
 }
 
-@media (max-width: 960px) {
+@media (max-width: 1080px) {
   .bildFrei {
     height: 300px;
     width: 50%;
@@ -2904,9 +2904,6 @@ div[class*="bildContainerHoch"] {
 }
 
 .bildFrei:hover {
-  /* color: $dark-color; */
-  /* color: $base-color; */
-  /* background-color: rgba(255,255,255,0.8); */
   background-color: #222222cc;
   border-top: 30px solid transparent;
   /*    border: 2px rgba(20, 176, 66, 0.5) dotted;*/
@@ -2914,7 +2911,7 @@ div[class*="bildContainerHoch"] {
   /*    transition: 0.5s all ease;*/
 }
 
-@media (max-width: 960px) {
+@media (max-width: 1080px) {
   .bildFrei:hover {
     border-top: none;
   }
@@ -3078,9 +3075,19 @@ div[class*="bildContainerHoch"] {
 }
 
 .pad-40 {
-  /*padding: 0px 40px 0px 40px;*/
-  padding-right: 40px;
-  padding-left: 40px;
+  padding: 0px 40px 0px 40px;
+}
+
+@media (max-width: 1080px) {
+  .pad-40 {
+    padding: 0px 10px 0px 10px;
+  }
+}
+
+@media (max-width: 760px) {
+  .pad-40 {
+    padding: 0px 40px 0px 40px;
+  }
 }
 
 .pad-40ou {
