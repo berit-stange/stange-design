@@ -1,6 +1,8 @@
 /************************************* media queries 1081 *******************/
+// @import './scss/basics/breakpoints';
 
-@media (max-width:1081px) {
+
+@media (max-width:1080px) {
     header {
         height: 120px;
     }
@@ -14,6 +16,7 @@
         width: 100%;
         position: relative;
         top: 120px;
+        background-color: red;
     }
 
     .breite {
@@ -402,7 +405,7 @@
         top: 430px;
         left: 0;
         width: 100%;
-        /* weil absolut positionierrt rutscht der erste button drunter*/
+        /* weil absolut positioniert, rutscht der erste button drunter*/
         z-index: 900;
     }
 
@@ -421,15 +424,15 @@
         padding-left: 0px;
     }
 
-    div[class*="bildContainer"]:first-child {
-        padding-left: 0px;
-        padding-right: 0px;
-    }
+    // div[class*="bildContainer"]:first-child {
+    //     padding-left: 0px;
+    //     padding-right: 0px;
+    // }
 
-    div[class*="bildContainer"]:last-child {
-        padding-right: 0px;
-        padding-left: 0px;
-    }
+    // div[class*="bildContainer"]:last-child {
+    //     padding-right: 0px;
+    //     padding-left: 0px;
+    // }
 
     .col-3-3,
     .col-1-3,
@@ -461,7 +464,6 @@
 
     .pCe2-3 {
         width: 85%;
-        /*    min-width: 600px;*/
         margin: 0 auto;
     }
 
@@ -505,19 +507,19 @@
     //     align-items: center;
     // }
 
-//     .bildFrei:hover {
-//     height: 300px;
-//     width: 50%;
-//     background-color: #222222cc;
-//     border: 0px solid transparent;
-//     border-top: none;
-//     transition: 1s all ease;
-//     overflow: hidden;
-//     padding: 0px 20px 0px 20px;
-//     display: flex;
-//     align-items: center;
-//     justify-content: center;
-// }
+    //     .bildFrei:hover {
+    //     height: 300px;
+    //     width: 50%;
+    //     background-color: #222222cc;
+    //     border: 0px solid transparent;
+    //     border-top: none;
+    //     transition: 1s all ease;
+    //     overflow: hidden;
+    //     padding: 0px 20px 0px 20px;
+    //     display: flex;
+    //     align-items: center;
+    //     justify-content: center;
+    // }
 
     .bildFrei h3 {
         font-size: 14px;

@@ -34,7 +34,6 @@ header {
     left: 0;
     right: 0;
     height: 220px;
-    /*    height: auto;*/
     width: 100%;
     max-width: 1200px;
     z-index: 2000;
@@ -57,18 +56,6 @@ header label {
 .h170 {
     height: 170px;
 }
-
-/* main { */
-/*    position: relative; */
-/*    top: 220px;*/
-/*    left: 0;*/
-/*    right: 0;*/
-/*    width: 90%; */
-/*    height: auto;*/
-/*    max-width: 1200px;*/
-/*    background-color: white;*/
-/*    z-index: 500;*/
-/* } */
 
 .main {
     padding-bottom: 500px;
@@ -393,16 +380,16 @@ img {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
 
-    @include xl {
-        grid-template-columns: repeat(3, 1fr);
+    @include md {
+        grid-template-columns: repeat(1, 1fr);
     }
 
     @include lg {
         grid-template-columns: repeat(2, 1fr);
     }
 
-    @include md {
-        grid-template-columns: repeat(1, 1fr);
+    @include xl {
+        grid-template-columns: repeat(3, 1fr);
     }
 }
 
