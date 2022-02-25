@@ -1373,6 +1373,42 @@ footer {
   }
 }
 
+@media (min-width: 0) {
+  .test {
+    background-color: red;
+  }
+}
+
+@media (min-width: 480px) {
+  .test {
+    background-color: blue;
+  }
+}
+
+@media (min-width: 760px) {
+  .test {
+    background-color: green;
+  }
+}
+
+@media (min-width: 1080px) {
+  .test {
+    background-color: purple;
+  }
+}
+
+@media (min-width: 1200px) {
+  .test {
+    background-color: orange;
+  }
+}
+
+@media (min-width: 1400px) {
+  .test {
+    background-color: pink;
+  }
+}
+
 /* CSS Document */
 .about-01 {
   background-image: url(/img/stange-design-story-1979-2.jpg);
@@ -2435,7 +2471,6 @@ header {
   left: 0;
   right: 0;
   height: 220px;
-  /*    height: auto;*/
   width: 100%;
   max-width: 1200px;
   z-index: 2000;
@@ -2459,17 +2494,6 @@ header label {
   height: 170px;
 }
 
-/* main { */
-/*    position: relative; */
-/*    top: 220px;*/
-/*    left: 0;*/
-/*    right: 0;*/
-/*    width: 90%; */
-/*    height: auto;*/
-/*    max-width: 1200px;*/
-/*    background-color: white;*/
-/*    z-index: 500;*/
-/* } */
 .main {
   padding-bottom: 500px;
   width: 100%;
@@ -2794,24 +2818,24 @@ img {
       grid-template-columns: repeat(3, 1fr);
 }
 
-@media (max-width: 1200px) {
+@media (min-width: 760px) {
   .grid-3 {
-    -ms-grid-columns: (1fr)[3];
-        grid-template-columns: repeat(3, 1fr);
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
   }
 }
 
-@media (max-width: 1080px) {
+@media (min-width: 1080px) {
   .grid-3 {
     -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
   }
 }
 
-@media (max-width: 760px) {
+@media (min-width: 1200px) {
   .grid-3 {
-    -ms-grid-columns: (1fr)[1];
-        grid-template-columns: repeat(1, 1fr);
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
   }
 }
 
@@ -2880,7 +2904,7 @@ div[class*="bildContainerHoch"] {
   /*    padding: 0px 0px 0px 0px;*/
 }
 
-@media (max-width: 1080px) {
+@media (min-width: 1080px) {
   .bildFrei {
     height: 300px;
     width: 50%;
@@ -2911,7 +2935,7 @@ div[class*="bildContainerHoch"] {
   /*    transition: 0.5s all ease;*/
 }
 
-@media (max-width: 1080px) {
+@media (min-width: 1080px) {
   .bildFrei:hover {
     border-top: none;
   }
@@ -3078,13 +3102,13 @@ div[class*="bildContainerHoch"] {
   padding: 0px 40px 0px 40px;
 }
 
-@media (max-width: 1080px) {
+@media (min-width: 1080px) {
   .pad-40 {
     padding: 0px 10px 0px 10px;
   }
 }
 
-@media (max-width: 760px) {
+@media (min-width: 760px) {
   .pad-40 {
     padding: 0px 40px 0px 40px;
   }
