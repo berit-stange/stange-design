@@ -2794,14 +2794,27 @@ img {
       grid-template-columns: repeat(3, 1fr);
 }
 
-@media (max-width: 1080px) {
+@media (max-width: 1200px) {
+  .grid-3 {
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 960px) {
   .grid-3 {
     -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
   }
 }
 
-/*---------------------------------GRID 1081---------------------------------*/
+@media (max-width: 760px) {
+  .grid-3 {
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+  }
+}
+
 /* -------------------------------------------------------INHALTE------------------ */
 .brand {
   height: 120px;
@@ -2867,7 +2880,7 @@ div[class*="bildContainerHoch"] {
   /*    padding: 0px 0px 0px 0px;*/
 }
 
-@media (max-width: 1080px) {
+@media (max-width: 960px) {
   .bildFrei {
     height: 300px;
     width: 50%;
@@ -2901,7 +2914,7 @@ div[class*="bildContainerHoch"] {
   /*    transition: 0.5s all ease;*/
 }
 
-@media (max-width: 1080px) {
+@media (max-width: 960px) {
   .bildFrei:hover {
     border-top: none;
   }
