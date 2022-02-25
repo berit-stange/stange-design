@@ -6,7 +6,7 @@ footer {
     margin: 0 auto;
     width: 90%;
     max-width: 1200px;
-    background-color: #14b042;
+    background-color: $accent-color;
     padding-bottom: 50px;
 }
 
@@ -39,11 +39,11 @@ footer {
 }
 
 .nav2-footer:hover {
-    color: #222222;
+    color: $dark-color;
 }
 
 .text-weiss {
-    color: white;
+    color: $white;
     /*	font-size: 12px;*/
 }
 
@@ -58,19 +58,19 @@ footer {
 }
 
 .a-foot-spez {
-    color: white;
+    color: $white;
     font-weight: 600;
     padding: 10px 10px 10px 10px;
     display: inline-block;
 }
 
 .a-foot-spez:hover {
-    color: #222222;
+    color: $dark-color;
 }
 
 .a-foot-u {
-    color: white;
-    /*    color: #222222;*/
+    color: $white;
+    /*    color: $dark-color;*/
     font-weight: 500;
     padding: 10px 10px 10px 10px;
     display: inline-block;
@@ -93,6 +93,6 @@ footer {
     margin: 0 auto;
     position: absolute;
     bottom: 0px;
-    border-top: 2px dotted white;
+    border-top: 2px dotted $white;
     padding: 10px;
 }

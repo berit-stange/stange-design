@@ -1,6 +1,4 @@
-// section{
-/*border: 1px solid blue;*/
-// }
+// ------------------SLIDER -------------------------------
 
 .container {
     height: 600px;
@@ -35,13 +33,6 @@
     margin: 20px 10px;
 }
 
-// .slider-dots {
-/*width: 100%;*/
-/*display: block;*/
-/*position: absolute;*/
-/*text-align: center;*/
-// }
-
 .slider-dots .slider-dot {
     margin: 0 4px;
     position: relative;
@@ -59,18 +50,11 @@ input#radio-05:checked~.slider-dots label#img-dot-5 {
     color: white;
 }
 
-
 [id^="radio-"]:checked+section {
     left: 0;
     transition: 1s left ease-in;
     z-index: 200;
 }
-
-// [id^="radio-"]:checked + section h2{
-/*transform: translateY(200px);*/
-/*            transition: all 1s ease;*/
-/*opacity: 1;*/
-// }
 
 [id^="radio-"]:checked+label {
     /*Attribut-Selektor Zeichen-/Buchstabenreihenfolge*/
@@ -132,11 +116,6 @@ input#radio-05:checked~.slider-dots label#img-dot-5 {
     background-image: url(/img/stange-design-produkte-pappmoebel-schaf_0114-2.jpg);
 }
 
-
-
-
-
-
 .sliderTextBox {
     padding: 30px;
     color: #222222;
@@ -145,7 +124,6 @@ input#radio-05:checked~.slider-dots label#img-dot-5 {
     display: block;
 }
 
-
 .sliderTextBox:hover {
     /*    color: #222222;*/
     /*    background-color:rgba(255,255,255,0.85);*/
@@ -153,16 +131,6 @@ input#radio-05:checked~.slider-dots label#img-dot-5 {
     background-color: white;
     transition: all 0.5s ease;
 }
-
-
-// .sliderTextBoxNeg{
-/*    padding: 30px;*/
-/*    color: white;*/
-/*    color: #222222;*/
-/*    background-color:rgba(255,255,255,0.85);*/
-/*    display: block;*/
-// }
-
 
 .sliderTextBoxNeg:hover {
     color: #14b042;
