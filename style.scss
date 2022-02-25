@@ -6,6 +6,7 @@
 @import './scss/basics/breakpoint450';
 @import './scss/basics/breakpoint660';
 @import './scss/basics/breakpoint1081';
+@import './scss/basics/breakpoints';
 
 @import './scss/pages/about';
 @import './scss/pages/entwicklung';
@@ -386,8 +387,19 @@ img {
 .grid-3 {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+
+    // grid-template-columns: 1fr 1fr 1fr;
+    @include lg {
+    grid-template-columns: repeat(2, 1fr);
+}
 }
 
+/*---------------------------------GRID 1081---------------------------------*/
+//    .grid-3 {
+// grid-template-columns: repeat(2, 1fr);
+// grid-template-columns: 1fr 1fr;
+// grid-gap: 20px;
+// } 
 
 
 
