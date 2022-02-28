@@ -3,8 +3,8 @@
 @import './scss/basics/footer';
 @import './scss/basics/nav';
 
-@import './scss/basics/breakpoint450';
-@import './scss/basics/breakpoint660';
+// @import './scss/basics/breakpoint450';
+// @import './scss/basics/breakpoint660';
 // @import './scss/basics/breakpoint1081';
 @import './scss/basics/breakpoints';
 
@@ -68,6 +68,26 @@ header label {
 .breite {
     width: 90%;
     max-width: 1200px;
+
+    @include xs {
+        width: 100%;
+    }
+
+    @include sm {
+        width: 100%;
+    }
+
+    @include md {
+        width: 100%;
+    }
+
+    // @include lg {
+    //     width: 90%;
+    // }
+
+    // @include xl {
+    //     width: 90%;
+    // }
 }
 
 .m170 {
@@ -393,7 +413,7 @@ img {
     }
 
     @include lg {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(3, 1fr);
     }
 
     @include xl {
@@ -479,36 +499,42 @@ div[class*="bildContainerHoch"] {
 
     @include sm {}
 
-    @include md {}
-
-    @include lg {
-        height: 300px;
-        width: 50%;
-        background-color: #222222cc;
-        border: 0px solid transparent;
-        border-top: none;
-        transition: 1s all ease;
-        overflow: hidden;
-        padding: 0px 20px 0px 20px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+    @include md {
+        // height: 300px;
+        // width: 50%;
+        // background-color: #222222cc;
+        // border: 0px solid transparent;
+        // border-top: none;
+        // transition: 1s all ease;
+        // overflow: hidden;
+        // padding: 0px 20px 0px 20px;
+        // display: flex;
+        // align-items: center;
+        // justify-content: center;
     }
+
+    @include lg {}
 }
 
 .bildFrei:hover {
     background-color: $dark-color-op;
     border-top: 30px solid transparent;
+
     /*    border: 2px rgba(20, 176, 66, 0.5) dotted;*/
     /*    border-top: 20px solid transparent;*/
     /*    transition: 0.5s all ease;*/
+    @include xs {}
+
+    @include sm {}
+
+    @include md {}
 
     @include lg {
         // height: 300px;
         // width: 50%;
         // background-color: #222222cc;
         // border: 0px solid transparent;
-        border-top: none;
+        // border-top: none;
         // transition: 1s all ease;
         // overflow: hidden;
         // padding: 0px 20px 0px 20px;
@@ -679,13 +705,22 @@ div[class*="bildContainerHoch"] {
 .pad-40 {
     padding: 0px 40px 0px 40px;
 
-    @include lg {
+    @include xs {
+        padding: 0;
+    }
+
+    @include sm {
         padding: 0px 10px 0px 10px;
     }
 
     @include md {
-        padding: 0px 40px 0px 40px;
+        padding: 0px 15px 0px 15px;
     }
+
+    // @include lg {
+    //     padding: 0px 10px 0px 10px;
+    // }
+
 }
 
 .pad-40ou {
