@@ -8,9 +8,9 @@
 footer {
   height: auto;
   position: relative;
-  bottom: 0px;
+  bottom: 0;
   margin: 0 auto;
-  width: 90%;
+  width: 100%;
   max-width: 1200px;
   background-color: #14b042;
   padding-bottom: 50px;
@@ -1351,7 +1351,7 @@ header label {
 }
 
 .main {
-  padding-bottom: 500px;
+  padding-bottom: 360px;
   width: 100%;
   position: relative;
   top: 220px;
@@ -1445,6 +1445,12 @@ h1 {
   margin: 0 auto;
 }
 
+@media (min-width: 0) {
+  h1 {
+    font-size: 20px;
+  }
+}
+
 h2 {
   color: #222222;
   font-size: 20px;
@@ -1455,6 +1461,19 @@ h2 {
   /*	text-transform: uppercase;*/
   max-width: 80%;
   margin: 0 auto;
+}
+
+@media (min-width: 0) {
+  h2 {
+    font-size: 16px;
+    max-width: 90%;
+  }
+}
+
+@media (min-width: 480px) {
+  h2 {
+    max-width: 90%;
+  }
 }
 
 h3 {
@@ -1534,27 +1553,6 @@ a:active {
 }
 
 .a-spezial:hover {
-  background-color: #222222;
-}
-
-.amazon {
-  height: auto;
-  width: 15%;
-  width: auto;
-  font-size: 16px;
-  font-weight: 600;
-  color: #ffffff;
-  background-color: #14b042;
-  padding: 15px 15px 15px 15px;
-  display: block;
-  float: right;
-  cursor: pointer;
-  position: relative;
-  top: 10px;
-  right: 10px;
-}
-
-.amazon:hover {
   background-color: #222222;
 }
 
@@ -1759,13 +1757,8 @@ img {
   z-index: 8000;
 }
 
-div[id*="bild-"] {
-  height: 300px;
-}
-
 div[class*="bildContainer"] {
   padding: 15px;
-  /*        height: 400px;*/
   overflow: hidden;
 }
 
@@ -1781,23 +1774,39 @@ div[class*="bildContainerHoch"] {
   overflow: hidden;
 }
 
-.bildFrei {
-  height: 300px;
-  background-color: transparent;
-  border: 20px solid transparent;
-  border-top: 200px solid transparent;
-  -webkit-transition: 1s all ease;
-  transition: 1s all ease;
-  overflow: hidden;
-  /*    padding: 0px 0px 0px 0px;*/
+@media (min-width: 0) {
+  .bildFrei {
+    height: 300px;
+    width: 50%;
+    background-color: #222222cc;
+    border: 20px solid transparent;
+    -webkit-transition: 1s all ease;
+    transition: 1s all ease;
+    overflow: hidden;
+  }
+}
+
+@media (min-width: 1080px) {
+  .bildFrei {
+    height: 300px;
+    width: 100%;
+    background-color: transparent;
+    border: 20px solid transparent;
+    border-top: 200px solid transparent;
+    -webkit-transition: 1s all ease;
+    transition: 1s all ease;
+    overflow: hidden;
+  }
 }
 
 .bildFrei:hover {
   background-color: #222222cc;
-  border-top: 30px solid transparent;
-  /*    border: 2px rgba(20, 176, 66, 0.5) dotted;*/
-  /*    border-top: 20px solid transparent;*/
-  /*    transition: 0.5s all ease;*/
+}
+
+@media (min-width: 1080px) {
+  .bildFrei:hover {
+    border: 20px solid transparent;
+  }
 }
 
 .bildFrei h3 {
@@ -1806,8 +1815,12 @@ div[class*="bildContainerHoch"] {
   background-color: rgba(255, 255, 255, 0.85);
   color: #222222;
   padding: 20px;
-  position: relative;
-  top: 0;
+}
+
+@media (min-width: 0) {
+  .bildFrei h3 {
+    font-size: 14px;
+  }
 }
 
 .bildFrei p {
@@ -1958,24 +1971,32 @@ div[class*="bildContainerHoch"] {
 }
 
 .pad-40 {
-  padding: 0px 40px 0px 40px;
+  padding-top: 0px;
+  padding-right: 40px;
+  padding-left: 40px;
 }
 
 @media (min-width: 0) {
   .pad-40 {
-    padding: 0;
+    padding-top: 0;
+    padding-right: 0;
+    padding-left: 0;
   }
 }
 
 @media (min-width: 480px) {
   .pad-40 {
-    padding: 0px 10px 0px 10px;
+    padding-top: 0px;
+    padding-right: 10px;
+    padding-left: 10px;
   }
 }
 
 @media (min-width: 760px) {
   .pad-40 {
-    padding: 0px 15px 0px 15px;
+    padding-top: 0px;
+    padding-right: 15px;
+    padding-left: 15px;
   }
 }
 
