@@ -3,9 +3,6 @@
 @import './scss/basics/footer';
 @import './scss/basics/nav';
 
-// @import './scss/basics/breakpoint450';
-// @import './scss/basics/breakpoint660';
-// @import './scss/basics/breakpoint1081';
 @import './scss/basics/breakpoints';
 
 @import './scss/pages/about';
@@ -58,7 +55,7 @@ header label {
 }
 
 .main {
-    padding-bottom: 500px;
+    padding-bottom: 360px;
     width: 100%;
     position: relative;
     top: 220px;
@@ -152,6 +149,10 @@ h1 {
     text-transform: uppercase;
     max-width: 80%;
     margin: 0 auto;
+
+    @include xs {
+        font-size: 20px;
+    }
 }
 
 h2 {
@@ -164,6 +165,16 @@ h2 {
     /*	text-transform: uppercase;*/
     max-width: 80%;
     margin: 0 auto;
+
+    @include xs {
+        font-size: 16px;
+        max-width: 90%;
+    }
+
+    @include sm {
+        // font-size: 16px;
+        max-width: 90%;
+    }
 }
 
 h3 {
@@ -243,27 +254,6 @@ a:active {
 }
 
 .a-spezial:hover {
-    background-color: $dark-color;
-}
-
-.amazon {
-    height: auto;
-    width: 15%;
-    width: auto;
-    font-size: 16px;
-    font-weight: 600;
-    color: $white;
-    background-color: $accent-color;
-    padding: 15px 15px 15px 15px;
-    display: block;
-    float: right;
-    cursor: pointer;
-    position: relative;
-    top: 10px;
-    right: 10px;
-}
-
-.amazon:hover {
     background-color: $dark-color;
 }
 
@@ -454,14 +444,14 @@ img {
     z-index: 8000;
 }
 
-div[id*="bild-"] {
-    height: 300px;
-}
+// div[id*="bild-"] {
+//     height: 300px;
+// }
 
 div[class*="bildContainer"] {
     padding: 15px;
-    /*        height: 400px;*/
     overflow: hidden;
+
 }
 
 div[class*="bildContainerHoch"] {
@@ -489,40 +479,43 @@ div[class*="bildContainerHoch"] {
 }
 
 .bildFrei {
-    height: 300px;
-    background-color: transparent;
-    border: 20px solid transparent;
-    border-top: 200px solid transparent;
-    transition: 1s all ease;
-    overflow: hidden;
-    /*    padding: 0px 0px 0px 0px;*/
+    // height: 300px;// background-color: transparent;
+    // border: 20px solid transparent;
+    // border-top: 200px solid transparent;
+    // transition: 1s all ease;
+    // overflow: hidden;
 
-    @include sm {}
-
-    @include md {
-        // height: 300px;
-        // width: 50%;
-        // background-color: #222222cc;
-        // border: 0px solid transparent;
+    @include xs {
+        height: 300px;
+        width: 50%;
+        background-color: #222222cc;
+        border: 20px solid transparent;
         // border-top: none;
-        // transition: 1s all ease;
-        // overflow: hidden;
+        transition: 1s all ease;
+        overflow: hidden;
         // padding: 0px 20px 0px 20px;
         // display: flex;
         // align-items: center;
         // justify-content: center;
     }
 
-    @include lg {}
+    @include md {}
+
+    @include lg {
+        height: 300px;
+        width: 100%;
+        background-color: transparent;
+        border: 20px solid transparent;
+        border-top: 200px solid transparent;
+        transition: 1s all ease;
+        overflow: hidden;
+    }
 }
 
 .bildFrei:hover {
     background-color: $dark-color-op;
-    border-top: 30px solid transparent;
+    // border-top: 30px solid transparent;
 
-    /*    border: 2px rgba(20, 176, 66, 0.5) dotted;*/
-    /*    border-top: 20px solid transparent;*/
-    /*    transition: 0.5s all ease;*/
     @include xs {}
 
     @include sm {}
@@ -533,8 +526,8 @@ div[class*="bildContainerHoch"] {
         // height: 300px;
         // width: 50%;
         // background-color: #222222cc;
-        // border: 0px solid transparent;
-        // border-top: none;
+        border: 20px solid transparent;
+        // border-top: 50px;
         // transition: 1s all ease;
         // overflow: hidden;
         // padding: 0px 20px 0px 20px;
@@ -543,14 +536,29 @@ div[class*="bildContainerHoch"] {
     }
 }
 
+// .bildFrei-unten {
+//     background-color: #222222cc;
+//     width: 100%;
+//     position: relative;
+//     top: 150px;
+//     color: #eeeeee;
+//     padding: 10px 0px 0px 0px;
+//     align-self: center;
+//     height: 100px;
+// }
+
 .bildFrei h3 {
     font-size: 16px;
     font-weight: 600;
     background-color: rgba(255, 255, 255, 0.85);
     color: $dark-color;
     padding: 20px;
-    position: relative;
-    top: 0;
+    // position: relative;
+    // top: 180;
+
+    @include xs {
+        font-size: 14px;
+    }
 }
 
 .bildFrei p {
@@ -559,6 +567,10 @@ div[class*="bildContainerHoch"] {
     line-height: 20px;
     padding-top: 20px;
     color: $base-color;
+
+    @include xs {
+        // font-size: 14px;
+    }
 }
 
 .bildFreiHoch {
@@ -577,6 +589,8 @@ div[class*="bildContainerHoch"] {
 	text-align: center;
     transition: 0.5s all ease;
 }*/
+
+
 
 .bildUeb {
     height: 300px;
@@ -703,18 +717,31 @@ div[class*="bildContainerHoch"] {
 }
 
 .pad-40 {
-    padding: 0px 40px 0px 40px;
+    // padding: 0px 40px 0px 40px;
+    // so gibt es Probleme mit dem Footer
+    padding-top: 0px;
+    padding-right: 40px;
+    padding-left: 40px;
 
     @include xs {
-        padding: 0;
+        // padding: 0;
+        padding-top: 0;
+        padding-right: 0;
+        padding-left: 0;
     }
 
     @include sm {
-        padding: 0px 10px 0px 10px;
+        // padding: 0px 10px 0px 10px;
+        padding-top: 0px;
+        padding-right: 10px;
+        padding-left: 10px;
     }
 
     @include md {
-        padding: 0px 15px 0px 15px;
+        // padding: 0px 15px 0px 15px;
+        padding-top: 0px;
+        padding-right: 15px;
+        padding-left: 15px;
     }
 
     // @include lg {
