@@ -331,6 +331,11 @@
     background-size: cover;
 }
 
+.ausstellung-01-12 {
+    background-image: url(/img/stellwand-dino-bedruckt-plauderkiste-IMG-3186.jpg);
+    background-position: center;
+    background-size: cover;
+}
 
 /*  -------------------------------  Ausstellung 02  FABER CASTELL -------------------------------  */
 .ausstellung-02-01 {
