@@ -369,3 +369,11 @@ div[class*="bildContainer"]:last-child {
     margin: 0 auto;
     margin-top: 5px;
 }
+
+/* -----------------------------TEASER 09.03.2023 ------------------------------- */
+
+.teaser-3 {
+    margin-top: 25px;
+    /* border-top: 1px rgba(20, 176, 66, 0.5) dotted; */
+    border-top: 2px #D6D6D6 dotted;
+}
