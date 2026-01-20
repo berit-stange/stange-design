@@ -1,0 +1,51 @@
+@charset "utf-8";
+/* CSS Document */
+
+.about-01 {
+    background-image: url(/img/stange-design-story-1979-2.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.about-02 {
+    background-image: url(/img/stange-design-story-riesensofa-01-sw.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.about-03 {
+    background-image: url(/img/stange-design-story-riesensofa-01-sw.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+
+.about-faq-01 {
+    background-image: url(/img/pappmoebel-faq1-haltbarkeit.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.about-philosophie-01 {
+    background-image: url(/img/pappmoebel-philosophie.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.about-pappe-01 {
+    background-image: url(/img/pappmoebel-wellpappe-eigenschaften-skizze.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.about-medien-01 {
+    background-image: url(/img/pappmoebel-medien-pro7-galileo-03sw.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+/* .about-medien-01{
+        background-image:url(/img/pappmoebel-publikationen-02-02sw.jpg);
+        background-position: center;
+        background-size: cover;
+    }  */
